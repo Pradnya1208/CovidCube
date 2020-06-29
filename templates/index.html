@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CovidCube</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <h2> Covid Cube </h2>
+    <div class="animate">
+        <div class="rotate"><</div>
+        <div class="rotate">></div>
+    </div>
+
+    <div class="container">
+        <div class="face1 side"><br>Covid19<br>Cases Worldover {{covid.cc_world}}</div>
+        <div class="face2 side"><br>Covid19<br>Cases in India {{covid.cc_India}}</div>
+        <div class="face3 side"></div>
+        <div class="face4 side">
+            <div id="rotate-text1">Deaths Worldover:{{covid.dt_world}}<br>India:{{covid.dt_India}}</div>
+        </div>
+        <div class="face5 side">Maharashtra<br><br>
+            <div id="rotate-face5" class="f5">Total Cases:{{covid.cc_mh}}<br>Recovered:{{covid.rec_mh}}<br>Deaths:{{covid.dt_mh}}</div>
+        </div>
+        <div class="face6 side">
+            <div id="rotate-text">Covid19<br>Recovery<br>World:{{covid.rec_world}}<br>India:{{covid.rec_India}}<br></div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
