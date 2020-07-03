@@ -4,6 +4,11 @@ from .models import Covid
 from bs4 import BeautifulSoup
 import requests
 
+
+
+
+
+
 urls = ["https://www.worldometers.info/coronavirus/", "https://www.worldometers.info/coronavirus/country/india/", "https://news.google.com/covid19/map?hl=en-IN&mid=/m/055vr&gl=IN&ceid=IN:en"]
 Cases_world = []
 cases_mh = []

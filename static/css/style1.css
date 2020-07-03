@@ -1,65 +1,70 @@
-body{
 
-    background-color: #333;
-    perspective: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective-origin: center -5em;
-    background-image:url('../images/covid_3.jpg');
-    background-position:center center fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-    opacity:0.1
-    height: 100%;
-    overflow: hidden;
-
-}
-html, body {
-    height: 100%;
+.s,
+.cube {
+    position:fixed;
+    bottom:2px;
+    left:0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    line-height: 12px;
 }
 
-.container{
-    animation-name:container;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count:infinite;
-    animation-duration:30s;
-    transform-origin:60px 60px 0;
-    transform-style: preserve-3d;
-}
-
-.container div{
-
+.s {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width:100px;
+    height:100px;
     border: 2px solid white;
-    background-color: red;
+    border-radius: 1%;
+    background-color:maroon;     /*Red DarkRed*/;
     text-align:center;
-    font-size:50px;
+    font-size:10px;
+    color:white;
     font-weight:bold;
+
+
 }
 
-.face1 {
-    transform: translateZ(60px);}
-.face2 {
-    transform: rotateY(90deg) translateZ(60px);}
-.face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(60px);}
-.face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);}
-.face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);}
-.face6 {
-    transform: rotateX(-90deg) translateZ(60px);}
+
+
+#rotate-textX6 {
+            transform: rotate(-90deg);
+        }
+#rotate-textX4 {
+            transform: rotate(300deg);
+        }
+#rotate-X5 {
+            transform: rotate(270deg);
+        }
 
 
 
-@keyframes container{
-    from, to {transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
-     /*16% {transform:rotateY(-90deg);}
-     33%{transform:rotateY(-90deg) rotateZ(90deg);}
-     50%{transform:rotateY(-180deg) rotateZ(90deg);}
-     66%{transform:rotateY(-270deg) rotateX(90deg);}
-     83%{transform:rotateX(90deg);}*/
+.x1 {transform: translateZ(50px);}
+.x2 {transform: rotateY(90deg) translateZ(50px);}
+.x3 {transform: rotateY(90deg) rotateX(90deg) translateZ(50px) ;}
+.x4 {transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);}
+.x5 {transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);}
+.x6 {transform: rotateX(-90deg) translateZ(50px);}
+
+.cube {
+    transform-style: preserve-3d;
+    display: none;
     }
+
+
+
+
+
+@-webkit-keyframes shrink{
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.cube{
+    -webkit-animation: shrink 8s linear infinite;
+    transform-origin:60px 60px 0;
+
+/*.cube :hover{
+   -webkit-animation-play-state:paused;
+}*/
+

@@ -6,30 +6,143 @@
     <meta charset="UTF-8">
     <title>CovidCube</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/covidcube.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+
 </head>
 
 <body>
-    <h2> Covid Cube </h2>
+
+
     <div class="animate">
         <div class="rotate"><</div>
         <div class="rotate">></div>
     </div>
 
-    <div class="container">
-        <div class="face1 side"><br>Covid19<br>Cases Worldover {{covid.cc_world}}</div>
-        <div class="face2 side"><br>Covid19<br>Cases in India {{covid.cc_India}}</div>
-        <div class="face3 side"></div>
-        <div class="face4 side">
-            <div id="rotate-text1">Deaths Worldover:{{covid.dt_world}}<br>India:{{covid.dt_India}}</div>
+ <div class="h2">
+        <div class="head">
+            <span>Covid Cube</span>
         </div>
-        <div class="face5 side">Maharashtra<br><br>
-            <div id="rotate-face5" class="f5">Total Cases:{{covid.cc_mh}}<br>Recovered:{{covid.rec_mh}}<br>Deaths:{{covid.dt_mh}}</div>
-        </div>
-        <div class="face6 side">
-            <div id="rotate-text">Covid19<br>Recovery<br>World:{{covid.rec_world}}<br>India:{{covid.rec_India}}<br></div>
+        <div class="head">
+            <span>Covid Cube</span>
         </div>
     </div>
 
+    <div class="container">
+        <div class="face1 side">
+            <div class="covid19">Covid19</div>
+            <div class="values">{{covid.cc_world}}</div>
+            <div class="covid19">Cases Worldover </div>
+        </div>
+
+        <div class="face2 side">
+            <div class="covid19">Covid19</div>
+            <div class="covid19_1">Cases In India</div>
+            <div class="values">{{covid.cc_India}}</div>
+            <div class="covid19_1">Deaths</div>
+            <div class="values">{{covid.dt_India}}</div>
+        </div>
+
+        <div class="face3 side">
+            <div class="message"><br>Stay Home<br>Stay Safe<br></div>
+        </div>
+
+         <div class="face5 side">
+            <div id="rotate-text">
+                <div class="covid19_4">Covid19</div>
+                <div class="covid19_4_1">World Recovery</div>
+                <div class="values4">{{covid.rec_world}}</div>
+                <div class="covid19_4_2">India</div>
+                <div class="values4">{{covid.rec_India}}</div>
+            </div>
+        </div>
+
+        <div class="face4 side">
+            <div id="rotate-text1"><div class="covid19_5">Covid19</div>
+                 <div class="values_5">{{covid.dt_world}}<br></div>
+                <div class ="covid19_5_2">Deaths</div>
+                <div class ="covid19_5_1">Worldover</div>
+            </div>
+        </div>
+
+       <div class="face6 side"></div>
+
+
+    </div>
+
+
+       <!-------------------------------------------------------------- -->
+        <!--
+        <div class="face1 side ">Covid19<br><b>{{covid.cc_world}}</b><br> CASES WORLDOVER</div>
+        <div class="face2 side"><br>Covid19<br>Cases in India<b>{{covid.cc_India}}</b><br>
+        Deaths:<b>{{covid.dt_India}}</b></div>
+        <div class="face3 side"><b>Stay Home Stay Safe</b><br></div>
+        <div class="face4 side">
+            <div id="rotate-text1">covid19<br><br><b>{{covid.dt_world}}</b><br>Deaths Worldover</div>
+        </div>
+        <div class="face5 side">Maharashtra<br><br>
+            <div id="rotate-face5" class="f5">Covid19<br>Total Cases:<b>{{covid.cc_mh}}</b>
+               <br> Recovered:<b>{{covid.rec_mh}}</b><br>Deaths:<b>{{covid.dt_mh}}</b></div>
+        </div>
+        <div class="face6 side"><br>
+            <div id="rotate-text"><br>Covid19<br>World Recovery<b>{{covid.rec_world}}</b>India:<b>{{covid.rec_India}}</b></div>
+        </div>
+    </div>
+-->
+<!-- states list -->
+
+
+
+
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Statewise Status</button>
+        <div class="dropdown-content">   <!--style="right:0;">-->
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+    </div>
+
+    <!-- for navigation
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Right</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    -->
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

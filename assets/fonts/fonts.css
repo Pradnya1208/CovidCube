@@ -1,0 +1,110 @@
+.f5{
+    font-size:19px;
+    color:white;
+}
+
+.covid19{
+     font-size:40px;
+     color:lightGrey;
+     text-align:center;
+     font-family:Georgia, serif;
+     justify-content: center;
+}
+.covid19_1{
+        font-size:35px;
+        color:lightGrey;
+        text-align:center;
+        font-family:Georgia, serif;
+        justify-content: center;
+}
+.covid19_4{
+        font-size:40px;
+        color:lightGrey;
+        text-align:center;
+        text-indent:-3em;
+        font-family:Georgia, serif;
+        justify-content: center;
+}
+.covid19_4_1{
+        font-size:33px;
+        color:lightGrey;
+        text-align:center;
+         text-indent:-3.4em;
+        font-family:Georgia, serif;
+        justify-content: center;
+}
+.covid19_4_2{
+        font-size:35px;
+        color:lightGrey;
+        text-align:center;
+         text-indent:-3.9em;
+        font-family:Georgia, serif;
+        justify-content: center;
+}
+
+.values4{
+     font-size:35px;
+     color:silver;
+     text-align:center;
+      text-indent:-3.5em;
+     font-weight:bold;
+     font-family:Arial Black, Gadget, sans-serif;
+     /*Comic Sans MS, cursive, sans-serif;*/
+     /*Palatino Linotype, Book Antiqua, Palatino, serif;*/
+}
+.covid19_5{
+        font-size:40px;
+        color:lightGrey;
+        text-align:left;
+        text-indent:3.6em;
+        font-family:Georgia, serif;
+        justify-content: start;
+}
+
+
+
+.covid19_5_1{
+        font-size:40px;
+        color:lightGrey;
+        text-align:left;
+        text-indent:3em;
+        font-family:Georgia, serif;
+        justify-content: start;
+}
+.covid19_5_2{
+        font-size:40px;
+        color:lightGrey;
+        text-align:left;
+        text-indent:3.8em;
+        font-family:Georgia, serif;
+        justify-content: start;
+}
+.values_5{
+     font-size:35px;
+     color:silver;
+     text-align:center;
+      text-indent:4em;
+     font-weight:bold;
+     font-family:Arial Black, Gadget, sans-serif;
+     /*Comic Sans MS, cursive, sans-serif;*/
+     /*Palatino Linotype, Book Antiqua, Palatino, serif;*/
+}
+
+
+.values{
+     font-size:35px;
+     color:silver;
+     text-align:center;
+     font-weight:bold;
+     font-family:Arial Black, Gadget, sans-serif;
+     /*Comic Sans MS, cursive, sans-serif;*/
+     /*Palatino Linotype, Book Antiqua, Palatino, serif;*/
+}
+.message{
+     font-size:42px;
+     color:lightGrey;
+     text-align:center;
+     font-family:Impact, Charcoal, sans-serif;
+}
+
+
